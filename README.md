@@ -4,6 +4,12 @@
 
 This project is a Node.js application that provides authentication services using Redis for user data storage. It includes user registration and login functionalities, with proper validation and error handling.
 
+## Demo
+
+https://github.com/user-attachments/assets/87065265-f304-44ed-b76d-8847b68f5a9a
+
+
+
 ## Features
 
 - User registration with password hashing
