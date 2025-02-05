@@ -1,4 +1,4 @@
-# Lendesk Project
+# Auth-API Project
 
 ## Overview
 
