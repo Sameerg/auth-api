@@ -107,6 +107,20 @@ The application uses Winston for logging. Logs are written to the console, files
 
 Errors are handled centrally and appropriate HTTP status codes are returned.
 
+## API Documentation
+
+The API documentation is generated using Swagger. You can access the interactive API documentation at:
+
+```
+http://localhost:3000/api-docs
+```
+
+To regenerate the Swagger documentation, run the following command:
+
+```bash
+npm run swagger
+```
+
 ## Future Scope
 
 To make this API better, consider the following enhancements:
