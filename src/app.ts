@@ -9,6 +9,8 @@ import hpp from "hpp";
 import logger from "./utils/logger";
 import { RATE_LIMIT_WINDOW_MS, RATE_LIMIT_MAX_REQUESTS } from "./config";
 import redisClient from "./server";
+import swaggerUi from "swagger-ui-express";
+import swaggerDocument from "../swagger-output.json";
 
 const app = express();
 
@@ -23,6 +25,10 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(limiter); // Apply rate limiting
 app.use("/api", authRoutes);
+
+// Serve Swagger UI
+app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
 
 // check redis connection
 app.get("/health", async (_, res) => {
