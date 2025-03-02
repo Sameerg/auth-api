@@ -2,7 +2,7 @@
   "swagger": "2.0",
   "info": {
     "title": "Auth API",
-    "description": "This project is a Node.js application that provides authentication services using Redis for user data storage. It includes user registration and login functionalities, with proper validation and error handling.",
+    "description": "Description",
     "version": "1.0.0"
   },
   "host": "localhost:3000",
@@ -11,7 +11,20 @@
     "http"
   ],
   "paths": {
-    "/register": {
+    "/health": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/api/register": {
       "post": {
         "description": "",
         "parameters": [
@@ -41,7 +54,7 @@
         }
       }
     },
-    "/login": {
+    "/api/login": {
       "post": {
         "description": "",
         "parameters": [
